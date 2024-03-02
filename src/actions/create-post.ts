@@ -6,7 +6,7 @@ import { z } from "zod";
 import { auth } from "@/auth";
 import { db } from "@/db"
 import paths from "@/path";
-import type { Post, User } from "@prisma/client";
+import type { Post } from "@prisma/client";
 import type { CreatePostFormState } from "@/types/global.types";
 
 const createPostSchema = z.object({
