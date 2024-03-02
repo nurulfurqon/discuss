@@ -22,8 +22,8 @@ export default function TopicCreateForm() {
 
   return (
     <section>
-      <Button size="sm" color="secondary" onPress={onOpen}>
-        New Topic
+      <Button size="sm" color="secondary" variant="light" onPress={onOpen}>
+        Create New Topic
       </Button>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent>

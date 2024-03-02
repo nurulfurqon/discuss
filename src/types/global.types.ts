@@ -4,8 +4,26 @@ export interface ProvidersProps {
 
 export interface CreateTopicFormState {
   errors: {
-    name?: string[];
-    description?: string[];
-    _form?: string[];
-  };
+    name?: string[]
+    description?: string[]
+    _form?: string[]
+  }
+}
+
+export interface TopicShowPageProps {
+  params: {
+    slug: string
+  }
+}
+
+export interface PostCreateFormProps {
+  slug: string
+}
+
+export interface CreatePostFormState {
+  errors: {
+    title?: string[]
+    content?: string[]
+    _form?: string[]
+  }
 }
