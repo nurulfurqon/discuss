@@ -13,6 +13,7 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 
+import FormButton from "@/components/common/form-button";
 import * as actions from "@/actions";
 
 export default function TopicCreateForm() {
@@ -55,9 +56,9 @@ export default function TopicCreateForm() {
                   <Button color="danger" variant="light" onPress={onClose}>
                     Close
                   </Button>
-                  <Button color="primary" type="submit">
-                    Sumbit
-                  </Button>
+                  <FormButton>
+                    Save
+                  </FormButton>
                 </ModalFooter>
               </form>
             </>
