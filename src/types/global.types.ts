@@ -16,6 +16,10 @@ export interface TopicShowPageProps {
   }
 }
 
+export interface PostShowProps {
+  postId: string
+}
+
 export interface PostCreateFormProps {
   slug: string
 }
