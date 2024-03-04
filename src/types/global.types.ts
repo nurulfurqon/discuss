@@ -39,3 +39,9 @@ export interface CreateCommentFormState {
   };
   success?: boolean;
 }
+
+export interface SearchPageProps {
+  searchParams: {
+    term: string
+  }
+}
