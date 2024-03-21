@@ -17,14 +17,14 @@ export default function Header() {
       </NavbarBrand>
       <NavbarContent justify="center">
         <NavbarItem>
-          <Suspense>
-            <SearchInput />
-          </Suspense>
+          <SearchInput />
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
-          <HeaderAuth />
+          <Suspense>
+            <HeaderAuth />
+          </Suspense>
         </NavbarItem>
       </NavbarContent>
     </Navbar>
