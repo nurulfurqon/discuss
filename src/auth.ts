@@ -18,13 +18,4 @@ export const { handlers: { GET,POST }, auth, signIn, signOut } = NextAuth({
       clientSecret: GITHUB_CLIENT_SECRET,
     }),
   ],
-  callbacks: {
-    // Usually not needed, here we are fixing a bug in nuxtauth
-    async session({ session, user }: any) {
-      if (session && user) {
-        session.user.id = user.id;
-      }
-      return session;
-    }
-  }
 })
